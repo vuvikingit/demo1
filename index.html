@@ -51,8 +51,8 @@
             var koef = mobile ? 0.5 : 1;
             var canvas = document.getElementById('heart');
             var ctx = canvas.getContext('2d');
-            var width = canvas.width;
-            var height = canvas.height;
+            var width = canvas.width = innerWidth;
+            var height = canvas.height = innerHeight;
             var rand = Math.random;
             ctx.fillStyle = "rgba(0,0,0,1)";
             ctx.fillRect(0, 0, width, height);
